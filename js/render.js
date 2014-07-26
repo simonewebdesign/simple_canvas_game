@@ -12,10 +12,18 @@ var render = function () {
     ctx.drawImage(monsterImage, monster.x, monster.y);
   }
 
-  // Score
+  // Text options
   ctx.fillStyle = "rgb(250, 250, 250)";
-  ctx.font = "24px Helvetica";
+  ctx.font = "18px Helvetica";
   ctx.textAlign = "left";
   ctx.textBaseline = "top";
+
+  // Score
   ctx.fillText("Goblins caught: " + monstersCaught, 32, 32);
+
+  // Hero (debug)
+  ctx.fillText("hero: " + JSON.stringify(hero), 32, 48);
+
+  // Monster (debug)
+  ctx.fillText("monster: " + JSON.stringify(monster), 32, 64);
 };
