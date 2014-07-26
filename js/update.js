@@ -23,4 +23,8 @@ var update = function (modifier) {
     ++monstersCaught;
     reset();
   }
+
+  // Monster's movement
+  monster.x < hero.x ? monster.x++ : monster.x--;
+  monster.y < hero.y ? monster.y++ : monster.y--;
 };
